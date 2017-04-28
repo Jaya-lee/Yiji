@@ -1,0 +1,111 @@
+
+		body,html{
+				overflow-x: hidden;}
+		.wrap{width: 21.6rem;height: 100%;}
+		.box1,.box2{
+			width:10.8rem;
+			float: left;
+			overflow: hidden;}
+		/*header*/
+		.top{
+			padding-top: 0.56rem;
+			border-bottom: 1px solid #000;
+		}
+		.top span{
+			font-size: 0.42rem;
+			color: #c50200;
+			line-height: 1.18rem;
+			width: 1.7rem;
+			margin-left: 4rem;
+			}
+		.top a{
+			text-decoration: none;
+			float: right;
+			color: #c50200;
+			line-height: 1.18rem;
+			
+		}
+		.top .iconfont{font-size: 0.7rem;
+		}
+		
+		/*main*/
+		.main{width: 9.71rem;
+			height: 100%;
+			background-image: url(../images/issue1_18.png);
+			background-repeat:no-repeat ;
+			background-position: center center;
+			background-size: 50%;
+			padding-left: 0.53rem;
+			padding-right: 0.56rem;}
+		textarea{width: 9.71rem;
+			height: 8.56rem;
+			background-color: rgba(0,0,0,0);
+			outline: 0;
+			border:0;
+			line-height: 1.36rem;
+			resize:0;}
+		.addphoto{height: 4.8rem;
+			background-color: #e5e5e5;
+			position: relative;
+		}
+		.addphoto a{width: 2.17rem;
+			position: absolute;
+			top: 1.8rem;
+			left:3.72rem;
+			display: block;
+			text-decoration: none;
+			line-height: 0.54rem;
+			text-align: center;
+			color: #d20000;
+			font-size: 0.24rem;
+			padding-top: 0.24rem;}
+		.addphoto a img{display: block;width: 0.7rem;margin: 0 auto;}
+		.main>a{display: block;height: 1.23rem;background: url(../images/tu2.jpg) no-repeat 0.08rem center;background-size: 7.2%;border-bottom: 1px solid #000;}
+		/*mainbottom*/
+		.main-bottom div{float: left;line-height: 1.32rem;font-size: 0.32rem;color: #010101;text-indent: 0.6rem;text-decoration: none;font-weight: lighter;}
+		.main-bottom div+div{margin-left: 2.2rem;}
+		.main-bottom div:first-child{background: url(../images/p_03.png) no-repeat left center;background-size: 12.34%}
+		.main-bottom div:last-child{background: url(../images/issue4_38.jpg) no-repeat left center;background-size: 17.34%}
+		/*footer开始*/
+		footer{
+			width: 100%;
+			background: #000;
+			position: fixed;
+			bottom: 0;	
+
+		}
+		footer a{
+			color: #fff;
+			text-decoration: none;
+			float: left;
+			width: 25%;
+			text-align: center;
+		}
+		footer .iconfont{
+			font-size: 0.65rem;
+			display: block;
+			margin: 0.2rem 0;
+			
+		}
+		footer a:nth-child(3) i{
+			color: #da2615;
+		}
+		
+		footer span{
+			font-size: 0.42rem;
+			display: block;
+			color: #fff;
+			margin: -0.2rem 0 0.1rem 0;
+		}
+		/*box2*/
+		.box2 div:first-child{position: relative;height: 16.9rem;}
+		.box2 img:first-child{display: block;max-width: 100%;}
+		.box2 .close{position: absolute;display: block;background-size: 100%;width: 0.65rem;height: 0.65rem;top: 0.6rem;left: 0.3rem;}
+		.box2 img:last-child{position: absolute;display: block;width: 0.54rem;height: 0.8rem;top: 5.56rem;right:3.58rem;max-width: 100%}
+		.box2 .word1{padding-top: 0.5rem;}
+		.box2 h1{font-size: 0.36rem;padding-top: 0.12rem}
+		.box2 p{
+			line-height: 1rem;
+		}
+		.box2 p:nth-child(2){font-size: 0.24rem;}
+		.box2 p:last-child{font-size: 0.28rem;}

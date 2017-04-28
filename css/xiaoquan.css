@@ -1,0 +1,238 @@
+body,html{
+			overflow-x: hidden;
+		}
+		.warp{
+			width: 32.4rem;	
+			overflow: hidden;
+		}
+		.box1,.box2,.box3{
+			float: left;
+			width: 10.8rem;
+			overflow: auto;	
+		}
+		/*/////*box1///////*/
+		.box1{
+			margin-bottom: 1.45rem;
+		}
+		.content a{
+			display: block;
+			position: relative;
+		}
+		.content a>img{
+			width: 1.5rem;
+			position: absolute;
+			left: 0;
+			top:0;
+		}
+		.content>img{
+			width: 100%;
+		}
+		.box1 .word{
+			position: relative;
+			margin-bottom: 0.25rem;
+		}
+		.box1 .word p,.intro p{
+			padding:0 0.62rem;
+			font-size: 0.22rem;
+			line-height: 0.5rem;
+			
+		}
+		.word .first{
+			margin-top: 0.8rem;
+		}
+		.box1>div h4{
+			font-size: 0.32rem;
+			line-height: 0.59rem;
+			width: 2.23rem;
+			color: #fff;
+			background:url(../images/word.png) no-repeat;
+			-webkit-background-size:cover;
+			background-size:cover;
+			position: absolute;
+			left: 0;
+			top:-0.8rem;
+			text-align: center;
+			z-index: 20;
+		}
+		.intro p{
+			margin: 0.12rem 0 0.19rem 0
+		}
+		.intro img,.autor img{
+			width: 100%;
+		}
+		
+		.comment li{
+			background: #dcdcdc;
+			padding: 0.3rem 0.35rem;
+			border-bottom: 1px solid #fff;
+
+		}
+		.comment li a{
+			float: left;
+
+		}
+		.comment li img{
+			width: 0.7rem;
+			margin-right: 0.4rem;
+			padding-bottom: 1.2rem;
+		}
+		
+		.comment p{
+			margin-top: -0.39rem;
+		}
+		.box1 h3{
+			font-size: 0.26rem;
+		}
+		.comment span{
+			font-size: 0.16rem;
+			line-height: 0.4rem;
+		}
+		.comment p{
+			font-size: 0.24rem;
+		}
+		.comment >a{
+
+			display: block;
+			font-size: 0.32rem;
+			width: 100%;
+			line-height: 1.15rem;
+			background: #dcdcdc;
+			text-align: center;
+			margin:0.2rem 0;
+		}
+		.more{
+			display: none;
+		}
+		footer{
+			width: 10.8rem;
+			display: flex;
+			background: #000;
+			position: fixed;
+			bottom: 0;
+		}
+		footer a{
+			display: flex;
+			width: 25%;
+			color: #fff;
+			text-decoration: none;
+			justify-content:center;
+			line-height: 1.45rem;
+		}
+		footer .iconfont{
+			font-size: 0.42rem;
+			margin-right:0.2rem;
+		}
+		footer span{
+			font-size: 0.32rem;
+			display: block;
+			
+		}
+		.red{
+			color: red;
+		}
+		/*box2*/
+		.box2 div:first-child{position: relative;height: 16.9rem;}
+		.box2 img:first-child{display: block;max-width: 100%;}
+		.box2 .close{position: absolute;display: block;background-size: 100%;width: 0.65rem;height: 0.65rem;top: 0.6rem;left: 0.3rem;}
+		.box2 img:last-child{position: absolute;display: block;width: 0.54rem;height: 0.8rem;top: 5.56rem;right:3.58rem;max-width: 100%}
+		.box2 .word{padding-top: 0.4rem;}
+		.box2 h1{font-size: 0.36rem;padding-top: 0.12rem}
+		.box p{
+			line-height:1rem ;
+		}
+		.box2 p:nth-child(2){font-size: 0.24rem;}
+		.box2 p:last-child{font-size: 0.28rem;}
+		/*分享*/
+		.share{
+			width: 9.6rem;
+			background: #e1e1e1;
+			opacity: 0.9;
+			position: fixed;
+			bottom: 0;
+			font-size: 0.32rem;
+			padding: 0 0.6rem;
+			border-radius: 7px 7px 0 0;
+			display: none;
+			z-index: 20;
+		}
+		.share p{
+			font-size: 0.34rem;
+			text-align: center;
+		}
+		.share p:first-child{
+			margin:0.6rem 0 0.8rem 0;
+		}
+		.share p:last-child{
+			border-top: 1px solid #df141a;
+			padding: 0.5rem;
+		}
+		.share>div{
+			margin-bottom: 0.9rem;
+		}
+		.share a{
+			float: left;
+			width: 25%;
+			text-decoration: none;
+			text-align: center;
+			
+		}
+		.share img{
+			width: 1.34rem;
+		}
+		.share span{
+			display: block;
+			color: #df141a;
+		}
+		.zhezhao{
+			background: #7f7f7f;
+			opacity: 0.75;
+			z-index: 12;
+		}
+		/*评论*/
+		.box3{
+			width: 9.6rem;
+			overflow: hidden;
+			background:url(../images/bg2.jpg) no-repeat 0 0;
+			-webkit-background-size: cover;
+			background-size: cover;
+			z-index: 30;
+			padding: 0 0.6rem;
+			float: left;
+		}
+		.top{
+			display: flex;
+			justify-content:space-between;
+			padding: 0.8rem 0 0.4rem 0;
+			border-bottom: 1px solid #000;
+		}
+		.top a{
+			
+			font-size: 0.56rem;
+			color: #000;
+		}
+		.top h5{
+			font-size: 0.44rem;
+			color: red;
+
+		}
+		.top .iconfont{
+			font-size: 0.7rem;
+			color: red;
+		}
+		input{
+			border:0;
+			outline: 0;
+			width: 100%;
+			font-size: 0.4rem;
+			padding-bottom: 7.1rem;
+			background:none;
+		}
+		.box3>a{
+			float: left;
+			margin-right: 0.3rem;
+		}
+		.box3>a>img{
+			width: 0.72rem;
+
+		}
+		

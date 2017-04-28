@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/search.css">
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px";})()
+    </script>
+	<title>搜索</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">
+			<div class="top clearfix">
+				<a class="go">
+					<img src="../images/fangda.png" alt="">
+				</a>
+				<input id="search" type="text" placeholder="search">
+				<a href="index.html">X</a>
+			</div>
+			<div id="point">
+				<h5>-热门搜索词-</h5>
+				<div class="place">
+					<p>  
+						<img src="../images/p_03.png" alt="">
+						<span>北京</span>
+						<span>沈阳</span>
+						<span>上海</span>
+					</p>
+					<p>
+						<span>798</span>
+						<span>北京空间画廊</span>
+						<span>尤伦斯当代艺术中心</span>
+					</p>
+					<p>
+						<span>今日美术馆</span>
+						<span>时代美术馆</span>
+						<span>宋庄</span>
+					</p>
+				</div>
+				<div class="people">
+					<p>
+						<img src="../images/pe_07.png" alt="">
+						<span>昌凡志</span>
+						<span>向京</span>
+						<span>安东尼▪葛姆雷</span>
+					</p>
+					<p>
+						<span>小谷元彦</span>
+						<span>肖全</span>
+					</p>
+				</div>
+				<div class="story">
+					<p>
+						<img src="../images/h_11.png" alt="">
+						<span>对话：列奥纳多▪达▪芬奇</span>
+					</p>
+					<p><span>梵高和高更:理想和现实</span></p>
+					<p><span>2016北京媒体艺术双年展</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="top clearfix">
+				<a>
+					<img src="../images/fangda.png" alt="">
+				</a>
+				<input type="text" placeholder="search">
+				<a class="back">X</a>
+			</div>
+			<div class="no">
+				<img src="../images/cry_03.jpg" alt="">
+				<p>抱歉，没有找到相关信息......</p>
+			</div>
+			<div class="point">
+				<h5>-热门搜索词-</h5>
+				<div class="place">
+					<p>  
+						<img src="../images/p_03.png" alt="">
+						<span>北京</span>
+						<span>沈阳</span>
+						<span>上海</span>
+					</p>
+					<p>
+						<span>798</span>
+						<span>北京空间画廊</span>
+						<span>尤伦斯当代艺术中心</span>
+					</p>
+					<p>
+						<span>今日美术馆</span>
+						<span>时代美术馆</span>
+						<span>宋庄</span>
+					</p>
+				</div>
+				<div class="people">
+					<p>
+						<img src="../images/pe_07.png" alt="">
+						<span>昌凡志</span>
+						<span>向京</span>
+						<span>安东尼▪葛姆雷</span>
+					</p>
+					<p>
+						<span>小谷元彦</span>
+						<span>肖全</span>
+					</p>
+				</div>
+				<div class="story">
+					<p>
+						<img src="../images/h_11.png" alt="">
+						<span>对话：列奥纳多▪达▪芬奇</span>
+					</p>
+					<p><span>梵高和高更:理想和现实</span></p>
+					<p><span>2016北京媒体艺术双年展</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/hammer.min.js"></script>
+	<script>
+	//事件委托 点击关键词在搜索框显示
+		var point=document.getElementById("point")
+		var inp=document.getElementById("search")
+		point.addEventListener("click",function(e){
+			var e= window.event|| event
+			var target =e.target || ev.srcElement
+			if(target.nodeName=="SPAN"){
+				inp.value=inp.value+"  "+target.innerText;
+			}
+		})	
+	//搜索错误
+		var go=document.getElementsByClassName("go")[0]
+		var back=document.getElementsByClassName("back")[0]
+		var right=new Hammer(go)
+		var left=new Hammer(back)
+		right.on("tap",function(){
+			$(".wrap").stop().animate({"margin-left":-10.8+"rem"},300)
+		})
+		left.on("tap",function(){
+			$(".wrap").stop().animate({"margin-left":0},300)
+		})
+	</script>
+</body>
+</html>

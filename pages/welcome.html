@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/welcome.css">
+	<link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px";})()
+    </script>
+	<title>welcome</title>
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide wel">
+				<h2 id="time">-<span></span>/<span></span>/<span></span>-
+				</h2>
+				<a href="#">今日推送>></a>
+			</div>
+			<div class="swiper-slide blog">
+				<a href="index.html"><img src="../images/login_03.png"></a>
+				<div class="but">
+					<input type="text" placeholder="点击输入手机号/Email登录">
+					<input type="text" placeholder="输入密码">
+				</div>
+				<div class="mid clearfix">
+					<a href="index.html">登录</a>
+					<a href="#">注册</a>
+				</div>
+				<div class="agree">
+					<div class="check">√</div>
+					<span>登录或注册即同意艺集<a href="#">用户服务协议</a></span>
+				</div>
+				<div class="share clearfix">
+					<a href="#">
+						<img src="../images/weibo.jpg" alt="">
+						<span>微博</span>
+					</a>
+					<a href="#">
+						<img src="../images/weixin.jpg" alt="">
+						<span>微信</span>
+					</a>
+					<a href="#">
+						<img src="../images/qq.jpg" alt="">
+						<span>QQ</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/swiper-3.4.2.min.js"></script>
+	<script>
+		var mySwiper = new Swiper ('.swiper-container', {
+			direction:"horizontal", //横屏
+	  }) 
+		//日期
+		var date = new Date();
+		var year = date.getFullYear();
+		var month =date.getMonth()+1;
+		var day = date.getDate();
+		var span=document.getElementById("time").getElementsByTagName("span")
+		if(month<10){
+			month="0"+month
+		}
+		if(day<10){
+			day="0"+day
+		}
+		span[0].innerHTML=" "+year+" ";
+		span[1].innerHTML=" "+month+" ";
+		span[2].innerHTML=" "+day+" ";
+		
+	</script>
+</body>
+</html>

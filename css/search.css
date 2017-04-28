@@ -1,0 +1,174 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top:0;
+	bottom: 0;
+}
+	.wrap{
+		width: 21.6rem;
+	}
+	.box1,.box2{
+		width: 10.8rem;
+		float: left;
+		background:url(../images/bg2.jpg) no-repeat 0 0;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	/*box1*/
+	.box1 .top{
+		width: 90%;
+		margin: 0 auto;
+		border-bottom: 1px solid #000;
+		padding: 0.92rem 0 0.42rem 0;
+	}
+	.box1 .top a{
+		text-decoration: none;
+		color:#050505;
+	}
+	.box1 .top img{
+		width: 0.45rem;
+	}
+	.box1 .top a:first-child{
+		float: left;
+		line-height: 0.45rem;
+	}
+	.box1 .top input{
+		width: 80%;
+		float: left;
+		padding-left: 0.45rem;
+		font-size: 0.35rem;
+		border: 0;
+		outline: 0;
+	}
+	.box1 .top a:last-child{
+		float: right;
+		font-size: 0.3rem;
+		font-weight: bold;
+	}
+	/*top结束
+	point开始*/
+	.box1 #point{
+		margin-top: 1.27rem;
+	}
+	.box1 #point h5{
+		width: 3.24rem;
+		text-align: center;
+		font-size: 0.4rem;
+		margin: 0 auto;
+		margin-bottom: 1.2rem;
+	}
+	.box1 #point img{
+		margin-top: 0.2rem;
+	}
+	.box1 .place img{
+		width: 0.29rem;
+	}
+	.box1 .people img{
+		width: 0.34rem;
+	}
+	.box1 .story img{
+		width: 0.39rem;
+	}
+	.box1 #point p{
+		font-size: 0.36rem;
+		margin: 0 auto;
+		width: 7.75rem;
+		text-align: center;
+		line-height: 0.75rem;
+	}
+	.box1 #point span{
+		margin-left: 0.45rem;
+	}
+	.box1 #point>div{
+		margin-bottom: 0.73rem;
+	}
+	/*box2*/
+	.box2 .top{
+		width: 90%;
+		margin: 0 auto;
+		border-bottom: 1px solid #000;
+		padding: 0.92rem 0 0.42rem 0;
+	}
+	.box2 .top a{
+		text-decoration: none;
+		color:#050505;
+	}
+	.box2 .top img{
+		width: 0.45rem;
+	}
+	.box2 .top a:first-child{
+		float: left;
+		line-height: 0.45rem;
+	}
+	.box2 .top input{
+		width: 80%;
+		float: left;
+		padding-left: 0.45rem;
+		font-size: 0.35rem;
+		border: 0;
+		outline: 0;
+	}
+	.box2 .top a:last-child{
+		float: right;
+		font-size: 0.3rem;
+		font-weight: bold;
+	}
+	/*top结束
+	no开始*/
+	.box2 .no{
+		padding-bottom: 2.03rem;
+		background: #fff;
+	}
+	.box2 .no img{
+		display: block;
+		width: 0.87rem;
+		margin: 0 auto;
+		margin-bottom: 0.37rem;
+		margin-top: 1.45rem;
+	}
+	.box2 .no p{
+		font-size: 0.44rem;
+		width: 60%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	/*no结束 point开始*/
+	.box2 .point{
+		padding-top: 0.73rem;
+		background: #f5f5f5;
+		opacity: 0.4;
+	}
+	.box2 .point h5{
+		width: 3.24rem;
+		text-align: center;
+		font-size: 0.4rem;
+		margin: 0 auto;
+		margin-bottom: 1.2rem;
+	}
+	.box2 .point img{
+		margin-top: 0.2rem;
+	}
+	.box2 .place img{
+		width: 0.29rem;
+	}
+	.box2 .people img{
+		width: 0.34rem;
+	}
+	.box2 .story img{
+		width: 0.39rem;
+	}
+	.box2 .point p{
+		font-size: 0.36rem;
+		margin: 0 auto;
+		width: 7.75rem;
+		text-align: center;
+		line-height: 0.75rem;
+	}
+	.box2 .point span{
+		margin-left: 0.45rem;
+	}
+	.box2 .point>div{
+		margin-bottom: 0.73rem;
+	}

@@ -1,0 +1,352 @@
+
+	body,html{
+		overflow-x: hidden;
+	}
+	.wrap{
+		width: 43.2rem;
+		overflow: hidden;
+	}
+	.box1,.box2,.box3,.box4{
+		width: 10.8rem;
+		float: left;
+	}
+	.box1{
+		z-index: 21;
+	}
+	.box3{
+		display: none;
+	}
+	/*.box1*/
+	.box1 .top{
+		width: 100%;
+		background: #f0f0f2 url(../images/top1.jpg) no-repeat center 0.93rem;
+		-webkit-background-size:2.33rem ;
+		background-size:2.33rem ;	
+		position: fixed;
+		top:0;
+		z-index: 25;
+	}
+	.box1 .top a{
+		display: block;
+	}
+	.box1 .top >a >img{
+		width: 0.65rem;
+		float: right;
+		margin:0.81rem 0.44rem 0.27rem 0;
+	}
+	.box1 .show{
+		width: 200%;
+		overflow:hidden;
+	}
+	.box1 .show2 img{
+		width: 10.8rem;
+	}
+	.box1 .show>div{
+		width: 10.8rem;
+		float: left;
+	}
+	.box1 .showtop{
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+	}
+	.box1 .showtop img{
+		width: 100%;
+		display: block;
+	}
+	.box1 .logo .iconfont{
+		font-size: 0.4rem;
+		color: #fff;
+		margin:0 0.2rem;
+	}
+	.box1 .logo .share{
+		margin-right:0.5rem;
+	}
+	.box1 .logo .love{
+		color:red;
+	}
+	.box1 .tabone a{
+		display: block;
+		padding-bottom: 0.23rem;
+	}
+	.box1 .tabone img{
+		width: 10.8rem;
+	}
+	.box1 .logo{
+		display: flex;
+		position: absolute;
+		bottom: 0.26rem;
+		right:0.4rem;
+		align-items:baseline;
+
+	}
+	.box1 .logo span{
+		font-size: 0.4rem;
+		color: #fff;
+	}
+	.box1 .fun{
+		position: relative;
+	}
+	/*footer开始*/
+	footer{
+		width: 100%;
+		background: #000;
+		position: fixed;
+		bottom: 0;	
+
+	}
+	footer a{
+		color: #fff;
+		text-decoration: none;
+		float: left;
+		width: 25%;
+		text-align: center;
+	}
+	footer .iconfont{
+		font-size: 0.65rem;
+		display: block;
+		margin: 0.2rem 0;
+		
+	}
+	footer a:nth-child(2) i{
+		color: #da2615;
+	}
+	
+	footer span{
+		font-size: 0.42rem;
+		display: block;
+		color: #fff;
+		margin: -0.2rem 0 0.1rem 0;
+	}
+	/*box2*/
+	.box2{
+		position: relative;
+		z-index: 25;
+		background: #fff;
+		}
+	.content a{
+		display: block;
+		position: relative;
+	}
+	.content a>img{
+		width: 1.5rem;
+		position: absolute;
+		left: 0;
+		top:0;
+	}
+	.content>img{
+		width: 100%;
+	}
+	.word{
+		position: relative;
+		margin-bottom: 0.25rem;
+	}
+	.word p,.intro p{
+		padding:0 0.62rem;
+		font-size: 0.22rem;
+		line-height: 0.5rem;	
+	}
+	.word p{
+		padding-top: 0.8rem;
+	}
+	.word h4{
+		font-size: 0.32rem;
+		line-height: 0.59rem;
+		width: 2.23rem;
+		color: #fff;
+		background:url(../images/word.png) no-repeat;
+		-webkit-background-size:cover;
+		background-size:cover;
+		position: absolute;
+		left: 0;
+		top:0;
+		text-align: center;
+		z-index: 20;
+	}
+	.intro p{
+		margin: 0.12rem 0 0.19rem 0
+	}
+	.intro img,.autor img{
+		width: 100%;
+	}
+	.comment{
+		margin-bottom: 1.45rem;
+	}
+	.comment li{
+		background: #dcdcdc;
+		padding: 0.3rem 0.35rem;
+		border-bottom: 1px solid #fff;
+
+	}
+	.comment li a{
+		float: left;
+
+	}
+	.comment li img{
+		width: 0.7rem;
+		margin-right: 0.4rem;
+		padding-bottom: 1.2rem;
+	}
+	
+	.comment p{
+		margin-top: -0.39rem;
+	}
+	.box2 h3{
+		font-size: 0.26rem;
+	}
+	.comment span{
+		font-size: 0.16rem;
+		line-height: 0.4rem;
+	}
+	.comment p{
+		font-size: 0.24rem;
+	}
+	.comment >a{
+		display: block;
+		font-size: 0.32rem;
+		width: 100%;
+		line-height: 1.15rem;
+		background: #dcdcdc;
+		text-align: center;
+		margin:0.2rem 0;
+	}
+	.more{
+		display: none;
+	}
+	/*footer1*/
+	.footer1{
+		width: 10.8rem;
+		display: flex;
+		background: #000;
+		position: fixed;
+		bottom: 0;
+	}
+	.footer1 a{
+		display: flex;
+		width: 25%;
+		color: #fff;
+		text-decoration: none;
+		justify-content:center;
+		line-height: 1.45rem;
+	}
+	.footer1 .iconfont{
+		font-size: 0.42rem;
+		margin-right:0.2rem;
+	}
+	.footer1 span{
+		font-size: 0.32rem;
+		display: block;
+		
+	}
+	.red{
+		color: red;
+	}
+	/*分享*/
+	.share{
+		width: 9.6rem;
+		background: #e1e1e1;
+		opacity: 0.9;
+		position: fixed;
+		bottom: 0;
+		font-size: 0.32rem;
+		padding: 0 0.6rem;
+		border-radius: 7px 7px 0 0;
+		display: none;
+		z-index: 25;
+	}
+	.share p{
+		font-size: 0.34rem;
+		text-align: center;
+	}
+	.share p:first-child{
+		margin:0.6rem 0 0.8rem 0;
+	}
+	.share p:last-child{
+		border-top: 1px solid #df141a;
+		padding: 0.5rem;
+	}
+	.share>div{
+		margin-bottom: 0.9rem;
+	}
+	.share a{
+		float: left;
+		width: 25%;
+		text-decoration: none;
+		text-align: center;
+		
+	}
+	.share img{
+		width: 1.34rem;
+	}
+	.share span{
+		display: block;
+		color: #df141a;
+	}
+	.zhezhao{
+		width: 100%;
+		height: 100%;
+		display: none;
+		background: #7f7f7f;
+		opacity: 0.75;
+		position: absolute;
+		top:0;
+		bottom: 0;
+		overflow: hidden;
+		z-index: 21;
+	}
+	/*box3*/
+	.box3 div:first-child{position: relative;height: 16.9rem;}
+	.box3 img:first-child{display: block;max-width: 100%;}
+	.box3 .close{position: absolute;display: block;background-size: 100%;width: 0.65rem;height: 0.65rem;top: 0.6rem;left: 0.3rem;}
+	.box3 img:last-child{position: absolute;display: block;width: 0.54rem;height: 0.8rem;top: 5.56rem;right:3.58rem;max-width: 100%}
+	.box3 .word1{height: 2.3rem;background: #fff;}
+	.box3 h1{font-size: 0.36rem;line-height: 0.4rem;color: #000;padding-top: 0.12rem}
+	.box3 p:nth-child(2){font-size: 0.24rem;}
+	.box3 p:last-child{font-size: 0.28rem;line-height: 1.23rem;}
+	/*box4*/
+	.box4{
+		width: 9.6rem;
+		overflow: hidden;
+		background:url(../images/bg2.jpg) no-repeat 0 0;
+		-webkit-background-size: cover;
+		background-size: cover;
+		z-index: 20;
+		padding: 0 0.6rem;
+		float: left;
+	}
+	.box4 .top{
+		display: flex;
+		justify-content:space-between;
+		padding: 0.8rem 0 0.4rem 0;
+		border-bottom: 1px solid #000;
+	}
+	.box4 .top a{
+		
+		font-size: 0.56rem;
+		color: #000;
+	}
+	.box4 .top h5{
+		font-size: 0.44rem;
+		color: red;
+
+	}
+	.box4 .top .iconfont{
+		font-size: 0.7rem;
+		color: red;
+	}
+	.box4 input{
+		border:0;
+		outline: 0;
+		width: 100%;
+		font-size: 0.4rem;
+		padding-bottom: 7.1rem;
+		background:none;
+	}
+	.box4>a{
+		float: left;
+		margin-right: 0.3rem;
+	}
+	.box4>a>img{
+		width: 0.72rem;
+
+	}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<script type="text/javascript">
+		(function(){document.documentElement.style.fontSize=document.documentElement.clientWidth/10.8+'px'})()
+	</script>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="../css/issue.css">
+	<title>发布</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">
+			<div class="main">
+				<div class="top clearfix">
+					<span>上传照片</span>	
+					<a href="#">
+						<i class="iconfont icon-fabu"></i>
+					</a>
+				</div>
+				<textarea>说点什么...</textarea>
+				<div class="addphoto">
+					<a href="">
+						<img src="../images/tu.jpg">
+						点击添加图片
+					</a>
+				</div>
+				<div class="main-bottom">
+					<div class="address">点击获取位置</div>
+					<div>添加标签</div>
+				</div>
+			</div>
+			<footer class="clearfix">
+				<a href="index.html">
+					<i class="iconfont icon-xuanzhong"></i>
+					<span class="color">展讯</span>
+				</a>
+				<a href="recommend.html">
+					<i class="iconfont icon-tuijian"></i>
+					<span>推荐</span>
+				</a>
+				<a href="issue.html">
+					<i class="iconfont icon-fabu"></i>
+					<span>发布</span>
+				</a>
+				<a href="person.html">
+					<i class="iconfont icon-geren"></i>
+					<span>个人</span>
+				</a>
+			</footer>
+		</div>
+		<div class="box2">
+			<div>
+				<img src="../images/地图_01.jpg">
+				<div class="close"></div>
+				<img src="../images/p_03.png">
+			</div>	
+			<div class="word">
+				<h1>chi k11艺术空间</h1>
+				<p>开放时间：9:00-18:00</p>
+				<p>地址：淮海中路300号 上海k11购物艺术中心B3层</p>
+			</div>
+		</div>
+	</div>
+		<script src="../js/hammer.min.js"></script>
+		<script src="../js/jquery-3.1.1.js"></script>
+		<script>
+			var address = document.getElementsByClassName('address')[0]
+			var box2 = document.getElementsByClassName('box2')[0]
+			var close = document.getElementsByClassName('close')[0]
+			var hammertime1 = new Hammer(address);
+			hammertime1.on('tap', function() {
+				$(".wrap").stop().animate({"margin-left":-10.8+"rem"},300)
+			});
+			var hammertime2 = new Hammer(close);
+			hammertime2.on('tap', function() {
+				$(".wrap").stop().animate({"margin-left":0},300)
+			});
+		</script>
+	
+</body>
+</html>

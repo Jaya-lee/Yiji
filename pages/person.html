@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/iconfont.css">
+	<link rel="stylesheet" href="../css/person.css">
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px";})()
+    </script>
+	<title>个人</title>
+</head>
+<body>
+	<div class="warp">
+		<!-- /*///////////box1*/ -->
+		<div class="box1">
+			<div class="top clearfix">
+				<div class="set"></div>
+				<div class="picture"><img src=""></div>
+				<h1>阴雨天</h1>
+				<div class="top-bottom clearfix">
+					<P>关注<br><span>11</span></P>
+					<P>发布<br><span>9</span></P>
+					<P>访客<br><span>42</span></P>
+				</div>
+			</div>		
+			<section>
+				<div class="all">
+					<div class="all-t clearfix">
+						<h1>艺象云集</h1>
+						<span>ALL   ></span>
+					</div>
+					<div class="all-b clearfix">
+						<a href="#">
+							<img src="../images/person2_04.jpg">
+							<p>订阅/11</p>
+						</a>
+						<a href="#">
+							<img src="../images/person3_04.jpg">
+							<p>订阅/11</p>
+						</a>
+						<a href="#">
+							<img src="../images/person4_04.jpg">
+							<p>订阅/11</p>
+						</a>
+					</div>
+				</div>
+				<div class="change clearfix">
+					<div class="show1">
+						<div class="show-top">
+							<img src="../images/person7_36.jpg" alt="">
+						</div>
+						<div class="show-bot">
+							<a href="#"><img src="../images/person5_04.jpg" alt=""></a>
+							<a href="#"><img src="../images/person6_04.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="show2">
+						<div class="show-top">
+							<span>原创</span>
+							<span>缓存</span>
+						</div>
+						<div class="show-bot">
+							<a href="#"><img src="../images/person5_04.jpg" alt=""></a>
+							<a href="#"><img src="../images/person6_04.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="clearfix">
+				<a href="index.html">
+					<i class="iconfont icon-xuanzhong"></i>
+					<span class="color">展讯</span>
+				</a>
+				<a href="recommend.html">
+					<i class="iconfont icon-tuijian"></i>
+					<span>推荐</span>
+				</a>
+				<a href="issue.html">
+					<i class="iconfont icon-fabu"></i>
+					<span>发布</span>
+				</a>
+				<a href="person.html">
+					<i class="iconfont icon-geren"></i>
+					<span>个人</span>
+				</a>
+			</footer>
+		</div>
+		<!-- /*///////////box2*/ -->
+		<div class="box2">
+			<div class="top2 clearfix">
+				<img class="back"src="../images/person1_03.png" alt="">			
+			</div>
+			<section>
+				<ul class="sec-t">
+					<li>头像
+						<a class="pic"href="#"><img src="../images/touxiang.png"></a>
+					</li>
+					<li>背景
+						<a href="#">更换</a>
+					</li>
+					<li>名字
+						<a href="#">阴雨天</a>
+					</li>
+				</ul>
+				<ul class="sec-m clearfix">
+					<li>我的二维码
+						<a href="#"><img src="../images/ma.jpg"></a>
+					</li>
+					<li>我的地址
+						<a href="#">北京市 海淀区</a>
+					</li>
+					<li>我的隐私
+						<a href="#"><img src="../images/warning.png"></a>
+						<p>为保护用户隐私，请您尽量选择默认隐私设置</p>
+					</li>			
+				</ul>
+				<div class="sec-b">
+				</div>
+			</section>
+			<!-- 照片修改 -->
+			<div class="fix">
+				<p>进入相册选择</p>
+				<p>拍一张</p>
+				<p class="cancle">取消</p>
+			</div>
+			<div class="bg"></div>
+		</div>
+		<!-- /*///////////box3*/ -->
+		<div class="box3">
+			<div class="top3 clearfix">
+				<img class="back"src="../images/person1_03.png" alt="">			
+			</div>
+			<div class="main">
+				<ul class="main-top">
+					<li>自动离线缓存
+						<a href="#">开/关</a>
+					</li>
+					<li>Wi-Fi状态下自动缓存高清作品
+						<a class="download"href="#"><img src="../images/next.png" alt=""></a>
+					</li>
+					<li>使用流量状态下提醒
+						<a href="#">开/关</a>
+					</li>
+				</ul>
+				<ul class="main-middle clearfix">
+					<li><a href="#">消息推送</a></li>
+					<li><a href="#">意见反馈</a></li>
+					<li><a href="#">当前版本</a></li>
+					<li><a href="#">关于艺集</a></li>
+				</ul>
+				<div class="main-bottom">
+					<a href="index.html">退出登录</a>
+					<p>当前版本 1 . 0. 42</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/hammer.min.js"></script>
+	<script>
+		window.onload=function(){
+			var h1 =$("footer").height()
+			$(".change").css("margin-bottom",h1)
+		//////box1中
+			//////左右滑
+			var left=document.getElementsByClassName("show1")[0]
+			var right=document.getElementsByClassName("show2")[0]
+			var change1=new Hammer(left)
+			var change2=new Hammer(right)
+			change1.on("swipeleft",function(){ //左滑出show2
+				$(".change").stop().animate({"margin-left":"-100"+"%"},300)
+			})
+			change2.on("swiperight",function(){ //右滑出show1
+				$(".change").stop().animate({"margin-left":0},300)
+			})
+		//////三个box的切换
+			var set=document.getElementsByClassName("set")[0]
+			var picture=document.getElementsByClassName("picture")[0]
+			var backArr=document.getElementsByClassName("back")
+			var click1=new Hammer(set)
+			var click2=new Hammer(picture)
+			click1.on("tap",function(){
+				$(".box2").css("float","right")
+				$(".warp").stop().animate({"margin-left":-10.8+"rem"},300)
+			})
+			click2.on("tap",function(){
+				$(".box2").css("float","left")
+				$(".warp").stop().animate({"margin-left":-10.8+"rem"},300)
+			})
+			for(i=0;i<backArr.length;i++){ //box2 3中的返回按钮执行同一件事
+				(function(k){
+					var back = new Hammer(backArr[k])
+					back.on("tap",function(){
+						$(".warp").stop().animate({"margin-left":0},300)
+					})
+				})(i)
+			}
+		/////更换头像
+			var h2=$(".fix").height()
+			var pic=document.getElementsByClassName("pic")[0]
+			var changePic=new Hammer(pic)
+			var cancle=document.getElementsByClassName("cancle")[0]
+			var none=new Hammer(cancle)
+			changePic.on("tap",function(){
+					$(".bg").stop().show()
+					$(".fix").stop().animate({"margin-top":-h2},300)
+				})
+			none.on("tap",function(){
+				$(".bg").stop().hide()
+				$(".fix").stop().animate({"margin-top":0},300)
+			})
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/iconfont.css">
+	<link rel="stylesheet" href="../css/xiaoquan.css">
+	<script>
+		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px";})()
+    </script>
+	<title>肖全展示页</title>
+</head>
+<body>
+	<div class="warp clearfix">
+		<div class="box1">
+			<div class="content">
+				<a href="index.html">
+					<img src="../images/u196.png" alt="">
+				</a>
+				<img src="../images/now1.jpg" alt="">
+				<div class="word">
+					<h4>展览内容</h4>
+					<p class="first">本次展览将从人像摄影家肖全为杨丽萍拍摄的众多摄影中挑选出一组精品向观众展示。</p>
+					<p>一个是舞之精灵，美的化身；一个是被誉为中国最好的人像摄影家。两个人的心灵碰撞，会擦出什么样的艺术火花？摄影师镜头下真是的杨丽萍是什么样的？25日开始的“心动”展，无疑极大地撩起了人们的好奇心。</p>
+				</div>
+			</div>
+			<div class="intro">
+				<img src="../images/zuopin_02.jpg" alt="">
+				<p>
+					肖全，男，1959年生于四川成都，曾任深圳《街道》杂志摄影记者，被称为“中国最好的人像摄影师”。1980年代中期开始“我们这一代”拍摄，1991年出版《天堂之鸟》三毛摄影专集，1992年在瑞士举办个展，1993年在法国参加摄影联展，1997年出版《我们这一代》。2000年出版《我镜头下的美丽女人》
+				</p>
+			</div>
+			<div class="autor">
+				<img src="../images/zuopin.jpg" alt="">
+			</div>
+			<div class="comment">
+				<ul class="little">
+					<li>
+						<a class="clearfix" href="person.html"><img src="../images/touxiang.png"></a>
+						<h3>阿德</h3>
+						<span>2016.8.16</span>
+						<p>挺好的，特别喜欢这种风格</p>
+					</li>
+					<li>
+						<a class="clearfix" href="person.html"><img src="../images/touxiang.png"></a>
+						<h3>阿德</h3>
+						<span>2016.8.16</span>
+						<p>杨丽萍，很美！</p>
+					</li>
+				</ul>
+				<a class="add">展开全部9条评论∨</a>
+				<ul class="more">
+					<li>
+						<a class="clearfix" href="person.html"><img src="../images/touxiang.png"></a>
+						<h3>阿德</h3>
+						<span>2016.8.16</span>
+						<p>挺好的，特别喜欢这种风格</p>
+					</li>
+					<li>
+						<a class="clearfix" href="person.html"><img src="../images/touxiang.png"></a>
+						<h3>阿德</h3>
+						<span>2016.8.16</span>
+						<p>杨丽萍，很美！</p>
+					</li>
+				</ul>
+			</div>
+			<footer>
+				<a href="#">
+					<i class="iconfont icon-guanzhu"></i>
+					<span>关注</span>
+				</a>
+				<a href="#">
+					<i class="iconfont icon-daozhequ"></i>
+					<span>到这</span>
+				</a>
+				<a href="#">
+					<i class="iconfont icon-fenxiang"></i>
+					<span>分享</span>
+				</a>
+				<a href="#">
+					<i class="iconfont icon-momentmessage"></i>
+					<span>评论</span>
+				</a>
+			</footer>
+		</div>
+		<!-- 到这 -->
+		<div class="box2">
+			<div>
+				<img src="../images/地图_01.jpg">
+				<div class="close"></div>
+				<img src="../images/p_03.png">
+			</div>	
+			<div class="word">
+				<h1>chi k11艺术空间</h1>
+				<p>开放时间：9:00-18:00</p>
+				<p>地址：淮海中路300号 上海k11购物艺术中心B3层</p>
+			</div>
+		</div>
+		<!-- 评论 -->
+		<div class="box3">
+			<div class="top">
+				<a id="back"><</a>
+				<h5>评论</h5>
+				<i class="iconfont icon-fabu"></i>
+			</div>
+			<form action="">
+				<input type="text" placeholder="说点什么.....">
+			</form>
+			<a href="#"><img src="../images/tu.jpg" alt=""></a>
+			<a href="#"><img src="../images/tu2.jpg" alt=""></a>
+		</div>
+	</div>
+	<!--分享--> 
+	<div class="share"> 
+			<p>分享到</p>
+			<div class="clearfix">
+				<a href="#">
+					<img src="../images/share1_03.png" alt="">
+					<span>艺集</span>
+				</a>
+				<a href="#">
+					<img src="../images/share2_03.png" alt="">
+					<span>微信</span>
+				</a>
+				<a href="#">
+					<img src="../images/share3_03.png" alt="">
+					<span>微博</span>
+				</a>
+				<a href="#">
+					<img src="../images/share4_03.png" alt="">
+					<span>QQ</span>
+				</a>
+			</div>
+			<p class="false">取消</p>
+	</div>
+	<script src="../js/jquery-3.1.1.js"></script>
+	<script src="../js/hammer.min.js"></script>
+	<script>
+		var add=document.getElementsByClassName("add")[0]
+		var click=new Hammer(add)
+		var box2=document.getElementsByClassName("box2")[0]
+		////评论展开收起
+		click.on("tap",function(){
+			$(".more").stop().slideToggle("fast")
+			$(".warp").css("overflow","auto")
+		})
+		//footer部分
+		var i=0;
+		var aArr=document.getElementsByTagName("footer")[0].getElementsByTagName("a")
+		var h1=$(".warp").height()
+		//关注
+		var click1=new Hammer(aArr[0])
+		click1.on("tap",function(){
+			i++;
+			if((i%2)!=0){
+				$(".icon-guanzhu").addClass("red")
+			}else{
+				$(".icon-guanzhu").removeClass("red")
+			}
+		})
+		//到这
+		var click2=new Hammer(aArr[1])
+		click2.on("tap",function(){
+			$(".warp").height($(".box2").height()).css("overflow","hidden").animate({"margin-left":-10.8+"rem"},300)
+		})
+		var click5=new Hammer(box2)
+		click5.on("tap",function(){
+			$(".warp").stop().animate({"margin-left":0},300).height(h1)
+		})
+		//分享
+		var click3=new Hammer(aArr[2])
+		click3.on("tap",function(){
+			var h=$(".share").height()
+			$(".box1").addClass("zhezhao")
+			$(".share").stop().slideDown("fast").animate({"margin-top":-h},300)
+		})
+		var fal=document.getElementsByClassName("false")[0]
+		var click6=new Hammer(fal)
+		click6.on("tap",function(){
+			$(".box1").removeClass("zhezhao")
+			$(".share").stop().slideUp("fast").animate({"margin-top":0},300)
+		})
+		//评论
+		var back=document.getElementById("back")
+		var click4=new Hammer(aArr[3])
+		click4.on("tap",function(){
+			$(".box2").css("float","right")
+			$(".warp").height($(".box3").height()).css("overflow","hidden").stop().animate({"margin-left":-10.8+"rem"},300)
+		})
+		var click7=new Hammer(back)
+		click7.on("tap",function(){
+			$(".box2").css("float","left")
+			$(".warp").stop().animate({"margin-left":0},300).height(h1)
+		})
+		
+		
+		
+	</script>
+</body>
+</html>
