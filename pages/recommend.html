@@ -96,7 +96,7 @@
 								<span>9</span>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</div>
 				<div class="show2">
 					<div class="showtop clearfix">
@@ -108,7 +108,7 @@
 				</div>
 			</div>
 			<footer class="clearfix">
-					<a href="index.html">
+					<a href="show.html">
 						<i class="iconfont icon-xuanzhong"></i>
 						<span class="color">展讯</span>
 					</a>
@@ -193,8 +193,8 @@
 					<span>评论</span>
 				</a>
 			</div>
-			<!--分享--> 
-			<div class="share"> 
+			<!--分享-->
+			<div class="share">
 					<p>分享到</p>
 					<div class="clearfix">
 						<a href="#">
@@ -223,7 +223,7 @@
 				<img src="../images/地图_01.jpg">
 				<div class="close"></div>
 				<img class="return" src="../images/p_03.png">
-			</div>	
+			</div>
 			<div class="word1">
 				<h1>chi k11艺术空间</h1>
 				<p>开放时间：9:00-18:00</p>
@@ -284,11 +284,11 @@
 			var change2=new Hammer(right)
 			change1.on("swipeleft",function(){ //左滑出show2
 				$(".show").height($(".show2").height()).stop().animate({"margin-left":"-100"+"%"},300)
-				$(".wrap").height($(".box1").height())	
+				$(".wrap").height($(".box1").height())
 			})
 			change2.on("swiperight",function(){ //右滑出show1
-				$(".show").height($(".show1").height()).stop().animate({"margin-left":0},300)	
-				$(".wrap").height($(".box1").height())	
+				$(".show").height($(".show1").height()).stop().animate({"margin-left":0},300)
+				$(".wrap").height($(".box1").height())
 			})
 			////出现单独展示页
 			var dital=document.getElementsByClassName("dital")[0]
@@ -311,7 +311,7 @@
 				if(b%2!=0){
 					$(".wrap").css("overflow","auto")
 				}else{$(".wrap").css("overflow","hidden")}
-					
+
 			})
 			//footer部分
 			var a=0;
@@ -356,7 +356,7 @@
 			var back=document.getElementById("back")
 			var click4=new Hammer(aArr[3])
 			click4.on("tap",function(){
-				$(".wrap").stop().animate({"margin-left":-21.6+"rem"},300).height($(".box4").height())	
+				$(".wrap").stop().animate({"margin-left":-21.6+"rem"},300).height($(".box4").height())
 			})
 			var click7=new Hammer(back)
 			click7.on("tap",function(){

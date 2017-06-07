@@ -9,7 +9,7 @@
 	<title>引导页</title>
 	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/guide.css">		
+	<link rel="stylesheet" href="css/index.css">		
 </head>
 <body>
 	<!-- 引导页 -->
@@ -18,9 +18,9 @@
 			<div class="swiper-slide box1 "></div>
 			<div class="swiper-slide box2"></div>
 			<div class="swiper-slide box3"></div>
-			<div class="swiper-slide box4"></div>  
+			<div class="swiper-slide box4"></div>
 		</div>
-		
+
 		<!-- 如果需要分页器 -->
 		<div class="swiper-pagination"></div>
 		<!-- 如果需要滚动条 -->
@@ -29,25 +29,25 @@
 	<script src="js/swiper-3.4.2.min.js"></script>
 	<script src="js/hammer.min.js"></script>
 	<script>
-	//引导页       
+	//引导页
 	  var mySwiper = new Swiper ('.swiper-container', {
 			// direction: 'vertical', //竖屏
 			direction:"horizontal", //横屏
 			// loop: true,  //循环
-			
+
 			// 如果需要分页器
 			pagination: '.swiper-pagination',
 			paginationElement : 'span',
 			// 如果需要滚动条
 			scrollbar: '.swiper-scrollbar',
-	  }) 
+	  })
 	  var box4=document.getElementsByClassName("box4")[0]
 	  var hammertime = new Hammer(box4)
 	  hammertime.on("swipeleft",function(){
 	  	location.href="pages/welcome.html"
-	  })      
-	  
-	  
+	  })
+
+
   </script>
 </body>
 </html>

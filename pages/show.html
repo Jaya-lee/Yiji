@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/iconfont.css">
-	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/show.css">
 	<script>
 		(function(){document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + "px";})()
     </script>
@@ -205,7 +205,7 @@
 			</div>
 		</div>
 		<footer class="clearfix">
-			<a href="index.html">
+			<a href="show.html">
 				<i class="iconfont icon-xuanzhong"></i>
 				<span class="color">展讯</span>
 			</a>
@@ -260,7 +260,7 @@
 			box1.addEventListener("touchend",function(){
 				clearInterval(t)
 				 t=setInterval(tArr1[0]($(".box1"),4,10.8),2000)})
-			
+
 			//第一个轮播
 			swipe.on("swipeleft",tArr1[0]($(".box1"),4,10.8))
 			swipe.on("swiperight",tArr1[1]($(".box1"),3,10.8))
@@ -275,7 +275,7 @@
 				function time1(obj,a,ml){ //右滑
 					return function(){
 						num++;
-						obj.stop().animate({"margin-left": -num*ml+"rem"},200) 
+						obj.stop().animate({"margin-left": -num*ml+"rem"},200)
 						if (num==a){
 			            	obj.animate({"margin-left":-ml+"rem"},0)
 			           		num=1;
@@ -376,7 +376,7 @@
 						})
 					})(j)
 				}
-				
+
 			}
 	</script>
 </body>
